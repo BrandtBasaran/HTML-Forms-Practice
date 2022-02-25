@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+
+<body>
+
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="johndoe@gmail.com" id="email">
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100" step="1">
+        </div>
+
+        <div>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div>
+            Program Interest
+            <div>
+                <label for="mma">MMA</label>
+                <input type="checkbox" name="mma" id="mma">
+        </div>
+
+        <div>
+                <label for="bjj">BJJ</label>
+                <input type="checkbox" name="bjj" id="bjj">
+        </div>
+
+        <div>
+                <label for="boxing">Boxing</label>
+                <input type="checkbox" name="boxing" id="boxing">
+        </div>
+
+        <div>
+            <label for="experience">Experience Level</label>
+            <select name="experience" id="experience">
+                <option label="Beginner 0-1yr" value="beginner"></option>
+                <option label="Intermediate 1-5yr" value="intermediate"></option>
+                <option label="Advanced 5+yr" value="advanced"></option>
+            </select>
+        </div>
+
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio">Tell us a little bit about yourself!</textarea>
+        </div>
+
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+        </div>
+
+        <div>
+            <label for="file">Participant Physical</label>
+            <input id="file" type="file" name="file">
+        </div>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+    
+</body>
+
+</html>
